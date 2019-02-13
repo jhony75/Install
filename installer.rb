@@ -14,6 +14,7 @@ programs = [
 "texlive-most",
 "texlive-lang",
 "texmaker"
+"geogebra"
 "i3blocks",
 "vim",
 "yay",
