@@ -9,16 +9,23 @@ If you want to try it, leave both files on the same directory, give execute perm
 1. Run installer.rb
 
 Installer.rb iterates through a simple array to install the following:
+
 1. Zathura.
   1. Zathura-cb.
   1. Zathura-djvu.
-  1. Zathura-mupdf.
-  1. Zathura-poppler.
+  1. Zathura-pdf-mupdf.
   1. Zathura-ps.
 1. Texlive-most.
   1. Texlive-lang.
+  1.texmaker.
 1. i3blocks.
 1. vim.
+1. yay.
 1. adobe-source-code-pro-fonts.
+
+Then it will install the following from AUR, using yay:
+
+1. Biber.
+1. Visual Studio Code.
 
 **You need to run RVM.sh as sudo, so it can install everything**
