@@ -17,11 +17,12 @@ Installer.rb iterates through a simple array to install the following:
   1. Zathura-ps.
 1. Texlive-most.
   1. Texlive-lang.
-  1.texmaker.
+  1. Texmaker.
 1. i3blocks.
-1. vim.
-1. yay.
-1. adobe-source-code-pro-fonts.
+1. Geogebra
+1. Vim.
+1. Yay.
+1. Adobe-source-code-pro-fonts.
 
 Then it will install the following from AUR, using yay:
 
