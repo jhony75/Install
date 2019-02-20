@@ -28,5 +28,6 @@ Then it will install the following from AUR, using yay:
 
 1. Biber.
 1. Visual Studio Code.
+1. Gitkraken.
 
 **You need to run RVM.sh as sudo, so it can install everything**
