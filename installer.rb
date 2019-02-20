@@ -23,7 +23,8 @@ programs = [
 
 aur = [
   "biber",
-  "visual-studio-code-bin"
+  "visual-studio-code-bin",
+  "gitkraken"
 ]
 
 programs.each { |name|
