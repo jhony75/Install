@@ -5,6 +5,7 @@ system ("pacman -Syu")
 system ("clear")
 
 programs = [
+  "zsh", #ZShell
   "zathura", #File reader base program
   "zathura-cb", #Zathura add-on
   "zathura-djvu", #Zathura add-on
@@ -13,8 +14,8 @@ programs = [
   "zathura-ps", #Zathura add-on
   "texlive-most", #LaTeX base
   "texlive-lang", #LaTeX support for more languages
-  "texmaker" #LaTeX editor
-  "geogebra" #Math helper and solver
+  "texmaker", #LaTeX editor
+  "geogebra", #Math helper and solver
   "i3blocks", #i3 Personalization 
   "vim", #Text editor for CLI
   "yay", #AUR Helper
@@ -33,10 +34,16 @@ aur = [
 
 #Array iteration to install Arch official repo's packages
 programs.each do |name|
-system ("pacman -Sq #{name} --noconfirm")
+  system ("pacman -Sq #{name} --noconfirm")
+end
 
 #Array iteration to install AUR packages
 aur.each do |name|
-system ("yay -Sq #{name} --noconfirm")
+  system ("yay -Sq #{name} --noconfirm")
+end
+
+system ("curl -L http://install.ohmyz.sh | sh")
+
+system ("chsh -s $(which zsh)")
 
 puts "Everything Installed!"
