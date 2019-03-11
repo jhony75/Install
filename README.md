@@ -11,23 +11,24 @@ If you want to try it, leave both files on the same directory, give execute perm
 Installer.rb iterates through a simple array to install the following:
 
 1. Zathura.
-  1. Zathura-cb.
-  1. Zathura-djvu.
-  1. Zathura-pdf-mupdf.
-  1. Zathura-ps.
-1. Texlive-most.
-  1. Texlive-lang.
-  1. Texmaker.
-1. i3blocks.
-1. Geogebra
-1. Vim.
-1. Yay.
-1. Adobe-source-code-pro-fonts.
+2. Zathura-cb.
+3. Zathura-djvu.
+4. Zathura-pdf-mupdf.
+5. Zathura-ps.
+6. Texlive-most.
+7. Texlive-lang.
+8. Texmaker.
+9. i3blocks.
+10. Geogebra
+11. Vim.
+12. Yay.
+13. Adobe-source-code-pro-fonts.
+14. Firefox Developer Edition.
 
 Then it will install the following from AUR, using yay:
 
 1. Biber.
-1. Visual Studio Code.
-1. Gitkraken.
+2. Visual Studio Code.
+3. Gitkraken.
 
 **You need to run RVM.sh as sudo, so it can install everything**
