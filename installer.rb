@@ -23,14 +23,14 @@ programs = [
   "firefox-developer-edition" #Firefox web browser with developer addons
 ]
 
-aur = [
-  "biber", #LaTeX bibliography helper
-  "visual-studio-code-bin", #Microsoft's text editor
-  "gitkraken", #GIt helper
-  "rubymine", #JetBrains IDE for Ruby and Rails development
-  "webstorm", #JetBrains IDE for JavaScript development
-  "clion" #JetBrains IDE for C/C++ development
-]
+#aur = [
+#  "biber", #LaTeX bibliography helper
+#  "visual-studio-code-bin", #Microsoft's text editor
+#  "gitkraken", #GIt helper
+#  "rubymine", #JetBrains IDE for Ruby and Rails development
+#  "webstorm", #JetBrains IDE for JavaScript development
+#  "clion" #JetBrains IDE for C/C++ development
+#]
 
 #Array iteration to install Arch official repo's packages
 programs.each do |name|
@@ -38,12 +38,12 @@ programs.each do |name|
 end
 
 #Array iteration to install AUR packages
-aur.each do |name|
-  system ("yay -Sq #{name} --noconfirm")
-end
+#aur.each do |name|
+#  system ("yay -Sq #{name} --noconfirm")
+#end
 
 system ("curl -L http://install.ohmyz.sh | sh")
 
-system ("chsh -s $(which zsh)")
+#system ("chsh -s $(which zsh)")
 
 puts "Everything Installed!"
