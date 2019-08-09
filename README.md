@@ -30,5 +30,8 @@ Then it will install the following from AUR, using yay:
 1. Biber.
 2. Visual Studio Code.
 3. Gitkraken.
+4. RubyMine.
+5. WebStorm.
+6. CLion.
 
-**You need to run RVM.sh as sudo, so it can install everything**
+**I believe that you shouldn't run this as sudo, because it already haves "sudo su" and "exit" where needed, but it does lacking test.**

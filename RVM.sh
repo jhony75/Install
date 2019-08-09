@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo su
+
 echo "Installing gcc"
 
 pacman -S gcc --noconfirm
@@ -14,5 +16,7 @@ source /etc/profile.d/rvm.sh
 clear
 
 chmod +x installer.rb
+
+exit
 
 ruby installer.rb
