@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 puts "Initializing Ruby Installer"
 system("clear")
 puts "Updating System"
@@ -25,11 +26,11 @@ programs = [
 
 aur = [
  "biber", #LaTeX bibliography helper
- "visual-studio-code-bin", #Microsoft's text editor
- "gitkraken", #GIt helper
- "rubymine", #JetBrains IDE for Ruby and Rails development
- "webstorm", #JetBrains IDE for JavaScript development
- "clion" #JetBrains IDE for C/C++ development
+ #"visual-studio-code-bin", #Microsoft's text editor
+ #"gitkraken", #GIt helper
+ #"rubymine", #JetBrains IDE for Ruby and Rails development
+ #"webstorm", #JetBrains IDE for JavaScript development
+ #"clion" #JetBrains IDE for C/C++ development
 ]
 
 system("sudo su")
@@ -50,4 +51,6 @@ end
 
 system ("chsh -s $(which zsh)")
 
-puts "Everything Installed!"
+#puts "Everything Installed!"
+
+system("notify-send 'Installation Complete!' 'Please check your terminal for success confirmation.' --icon=/usr/share/icons/Papirus-Light/32x32@2x/actions/forecast.svg")
